@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84db3b2317d15a34ab9a36e69b49f4e0, type: 3}
-  m_Name: WallCard
+  m_Name: TowerCard
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 21300000, guid: a14c2bf08b0400549bc960daef49431b, type: 3}
-  cardName: Wall Mimic
-  flavorText: It's a wall... wait no it's aliiiiive!
-  hp: 5
-  dps: 1
+  cardImage: {fileID: 0}
+  cardName: Tower
+  flavorText: It's a tower!
+  hp: 2
+  dps: 2
   footprint: {x: 1, y: 1}
   type: 1
-  rarity: 4
+  rarity: 1
