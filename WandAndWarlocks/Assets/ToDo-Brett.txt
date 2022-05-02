@@ -1,0 +1,24 @@
+Health System:
+	convert base health units (and units for damaging) to floats; if we're still using discrete health units for now, just clamp changes to nearest integers
+
+Enemy:
+	Make prefab subtypes with different navmesh agent walkable sizings, speed, damage, health
+		-Infantry: small, low health, low damage, can move through small spaces.
+		-Cavalry: larger, medium health, medium damage, much quicker
+		-Seige: chunky, high health, high damage, but very slow. 
+	Stretch: once we implement damage types, alter resistance/vulnerability to various damage types
+
+Tower:
+	-Separate out targeting logic from tower itself; utilize tagging system to make "viable target lists" per tower (so we can later add direction options to change a turret's targetting priority)
+	Make prefab tower types (our current basic is a raycast weapon; need to make bullet spawn/hurl)
+		-Basic raycast tower: casts generic magic beam. medium damage, fire speed, range
+		-Shootyboi (inspired by steffi drawing of deranged hyperactive goblin): lil buddy that rapidfires particles & shrapnel like a blunderbus. high speed, low damage, low range (infantry killer)
+		-ChunkyTrebuchet: big chunker. high damage, low speed, long range, includes some splash damage & could be upgraded to throw elemental damage. Generally best against enemy seige
+
+Enemy Spawn System:
+	Convert from just spawning basic type to spawning a wave specific list of enemies at listed intervals (to make the wave feel "chunky")
+		Note: might be fun to add a card that slows or speeds up wave spawn for a period of time
+
+Environment:
+	-Add temporary barricades: things the enemy can smash through, but it takes time, grouping enemies for AoE attacks or funnelling into a killing field.
+	-Add some visual distinctiveness to test level (multiple viable paths with size differentiation to force unit types down certain avenues)
