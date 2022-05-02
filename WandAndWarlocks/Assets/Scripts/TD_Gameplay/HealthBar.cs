@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
     {
         tm = GetComponent<TextMesh>();
         uh = GetComponentInParent<UnitHealth>();
-        setHealthCells(uh.GetHealth());
+        SetHealthCells((int)uh.GetHealth());
     }
 
     // Update is called once per frame
@@ -31,15 +31,15 @@ public class HealthBar : MonoBehaviour
         //quick & dirty textbased health bars. (REPLACE WITH JONATHAN'S AWESOME UI STUFF)
         if (gameObject.name == "HealthBar_Max")
         {
-            setHealthCells(uh.GetMaxHealth());
+            SetHealthCells((int)uh.GetMaxHealth());
         }
         else
         {
-            setHealthCells(uh.GetHealth());
+            SetHealthCells((int)uh.GetHealth());
         }
     }
 
-    void setHealthCells(int cellCount)
+    void SetHealthCells(int cellCount)
     {
         tm.text = "";
 
