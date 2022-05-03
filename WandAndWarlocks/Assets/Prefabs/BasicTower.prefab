@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2897077687563138813}
   - component: {fileID: 2897077687563138810}
   - component: {fileID: 2897077687563138811}
-  - component: {fileID: 2897077687563138815}
+  - component: {fileID: 1569651070996959351}
   m_Layer: 2
   m_Name: BasicTower
   m_TagString: Untagged
@@ -98,7 +98,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 7
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2897077687563138815
+--- !u!114 &1569651070996959351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,11 +107,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2897077687563138808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa38047a34d7ef442bf426ace97873b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 04e13dd352d9d2b488e6c4219db3ab2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDamage: 1
-  attackInterval: 1
+  baseDamage: 1
+  baseAttackInterval: 1
   turretSightRadius: 7
-  sinAmplitude: 0.008
+  sinAmplitude: 0.007
   cycleTime: 0.5
